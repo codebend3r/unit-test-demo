@@ -1,6 +1,6 @@
 'use strict';
 
-fdescribe('03 - hello directive', function () {
+describe('03 - hello directive', function () {
 
   var $rootScope,
     $compile,
