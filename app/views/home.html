@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Demo App</h1>
+  <div class="row">
+
+    <section>
+
+      <p>This is the message: <b>{{hello}}</b></p>
+      <input type="text" ng-model="newLabel"/>
+      <button type="button" class="btn btn-default" ng-click="addItem(newLabel)">Add New</button>
+
+      <h2>{{newLabel}}</h2>
+
+    </section>
+
+    <section>
+
+      <ul class="todo-list">
+        <li ng-repeat="i in items">
+          <p>ID: {{i.id}}</p>
+          <p>Label: {{i.label}}</p>
+        </li>
+      </ul>
+
+    </section>
+
+  </div>
+  <div class="row">
+
+  </div>
+</div>
