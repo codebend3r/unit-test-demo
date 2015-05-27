@@ -2,10 +2,12 @@
 
   'use strict';
 
+  // declare app
   angular.module('demoApp', [
     'ui.router'
   ]);
 
+  // config route
   angular.module('demoApp')
 
     .config(function ($urlRouterProvider, $stateProvider) {
@@ -23,26 +25,5 @@
         })
 
     })
-
-    .controller('homeCtrl', function ($scope) {
-
-      $scope.hello = 'Hello World';
-
-      $scope.newLabel = '';
-
-      $scope.items = [];
-
-      $scope.addItem = function (label) {
-
-        $scope.items.push({
-          id: Math.round(Math.random() * 1000),
-          label: label
-        });
-
-        $scope.newLabel = '';
-
-      };
-
-    });
 
 })();

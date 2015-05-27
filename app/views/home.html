@@ -1,12 +1,13 @@
 <div class="container">
-  <h1>Demo App</h1>
+  <h1>Unit Test Demo</h1>
   <div class="row">
 
     <section>
 
-      <p>This is the message: <b>{{hello}}</b></p>
-      <input type="text" ng-model="newLabel"/>
-      <button type="button" class="btn btn-default" ng-click="addItem(newLabel)">Add New</button>
+      <hello-world name="{{name}}"></hello-world>
+
+      <input type="text" ng-model="newLabel"/> <button type="button" class="btn btn-default" ng-click="addItem(newLabel)">Log Hours</button>
+      <p>Enter name of person to log hours</p>
 
       <h2>{{newLabel}}</h2>
 
@@ -18,13 +19,12 @@
         <li ng-repeat="i in items">
           <p>ID: {{i.id}}</p>
           <p>Label: {{i.label}}</p>
+          <p>Hours Worked: {{i.hoursWorked}}</p>
         </li>
       </ul>
 
     </section>
 
   </div>
-  <div class="row">
 
-  </div>
 </div>
