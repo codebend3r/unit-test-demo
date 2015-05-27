@@ -5,4 +5,4 @@ bower_components/
 .DS_Store
 .idea
 coverage/
-junit
+junit/
